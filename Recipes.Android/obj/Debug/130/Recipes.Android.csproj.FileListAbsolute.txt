@@ -676,3 +676,4 @@ C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Debug\130\android\assets
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\bin\Debug\Fonts\Signika-Light.ttf
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Debug\130\res\drawable\background_light.png
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Debug\130\res\drawable\background_dark.png
+C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Debug\130\res\drawable\icon.png
