@@ -20,28 +20,35 @@ namespace Recipes
         {
             InitializeComponent();
 
-            MongoClient dbClient = new MongoClient("mongodb://xamarin:hy8fEvpOQjXSJOMF@ac-jlrw5wd-shard-00-00.b8kfjmx.mongodb.net:27017,ac-jlrw5wd-shard-00-01.b8kfjmx.mongodb.net:27017,ac-jlrw5wd-shard-00-02.b8kfjmx.mongodb.net:27017/?ssl=true&replicaSet=atlas-12syu6-shard-0&authSource=admin&retryWrites=true&w=majority");
-
-            var database = dbClient.GetDatabase("Recipes");
-            var collection = database.GetCollection<BsonDocument>("recipescol");
-
-            var readDocument = collection.Find(new BsonDocument()).ToList();
-
-            string allRecipes = "";
-
-
-
-            foreach (BsonDocument doc in readDocument)
+            try
             {
-                allRecipes = allRecipes + doc.ToString().Remove(1, 47) + ",";
+                MongoClient dbClient = new MongoClient("mongodb://xamarin:hy8fEvpOQjXSJOMF@ac-jlrw5wd-shard-00-00.b8kfjmx.mongodb.net:27017,ac-jlrw5wd-shard-00-01.b8kfjmx.mongodb.net:27017,ac-jlrw5wd-shard-00-02.b8kfjmx.mongodb.net:27017/?ssl=true&replicaSet=atlas-12syu6-shard-0&authSource=admin&retryWrites=true&w=majority");
+
+                var database = dbClient.GetDatabase("Recipes");
+                var collection = database.GetCollection<BsonDocument>("recipescol");
+
+                var readDocument = collection.Find(new BsonDocument()).ToList();
+
+                string allRecipes = "";
+
+
+
+                foreach (BsonDocument doc in readDocument)
+                {
+                    allRecipes = allRecipes + doc.ToString().Remove(1, 47) + ",";
+                }
+
+                allRecipes = allRecipes.Remove(allRecipes.Length - 1);
+                allRecipes = "[" + allRecipes + "]";
+
+                RecipeList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<RecipeModel>>(allRecipes);
+
+                Lista.ItemsSource = RecipeList;
             }
-
-            allRecipes = allRecipes.Remove(allRecipes.Length - 1);
-            allRecipes = "[" + allRecipes + "]";
-
-            RecipeList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<RecipeModel>>(allRecipes);
-
-            Lista.ItemsSource = RecipeList;
+            catch
+            {
+                DisplayAlert("Error", "Please check your internet connection", "ok");
+            }
         }
 
         async private void Lista_ItemSelected(object sender, SelectedItemChangedEventArgs e)
