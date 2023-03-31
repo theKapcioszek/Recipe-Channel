@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Recipes.RecipePage"
+             BackgroundImageSource="{AppThemeBinding Light=background_light.png, Dark=background_dark.png}"
+             NavigationPage.HasNavigationBar="True">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame CornerRadius="20" Padding="0" Margin="46,0" IsClippedToBounds="True" BackgroundColor="#00000000">
+                <Image x:Name="PreviewImage" Source="" HeightRequest="300" WidthRequest="300" HorizontalOptions="Center"></Image>
+            </Frame>
+            <ListView x:Name="IngredientsList" HasUnevenRows="True" SelectionMode="None" SeparatorVisibility="None" HorizontalScrollBarVisibility="Never">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding .}" TextColor="Black" FontSize="20" FontFamily="Signika" FontAttributes="Bold,Italic" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Label>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label x:Name="Instructions" Text="" TextColor="Black" FontSize="15" FontFamily="Gatcha" FontAttributes="Bold,Italic" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
