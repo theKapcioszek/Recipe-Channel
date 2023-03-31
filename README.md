@@ -15,10 +15,10 @@
 - [ ] add more recipes
 <br>
 ### Screenshots
-<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650639.jpg" height=200 width=112/><img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650653.jpg" height=200 width=112/>
+<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650639.jpg" height=400 width=255/><img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650653.jpg" height=400 width=255/>
 <br>
 <p>Light Mode       Dark Mode</p>
 <br>
-<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650627.jpg" height=200 width=112/>
+<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650627.jpg" height=400 width=255/>
 <br>
 <p>Details (yeah it is ugly for now)</p>
