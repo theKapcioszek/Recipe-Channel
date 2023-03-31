@@ -2,23 +2,26 @@
 <br>
 <p>My small app designed to show recipes for tasty food</p>
 <br>
-## How does it work?
+<h2>How does it work?</h2>
 <br>
 <p>It is a Xamarin.Forms app that connects to my MongoDB database and downloads recipes so they can be shown as a list on main page</p>
 <br>
 <p>I'm sorry but for now only recipes in polish language are supported</p>
 <br>
-## To do's
-<br>
+<h2>Todo</h2>
+
 - [ ] add search bar
 - [ ] make details page look nicer
 - [ ] add more recipes
+
 <br>
-### Screenshots
-<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650639.jpg" height=400 width=255/><img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650653.jpg" height=400 width=255/>
+<h3>Screenshots</h3>
+<div>
+<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650639.jpg" height=500 width=255/><img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650653.jpg" height=500 width=255/>
+</div>
 <br>
-<p>Light Mode       Dark Mode</p>
+<p>Light Mode / Dark Mode</p>
 <br>
-<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650627.jpg" height=400 width=255/>
+<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650627.jpg" height=500 width=255/>
 <br>
 <p>Details (yeah it is ugly for now)</p>
