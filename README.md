@@ -17,7 +17,7 @@
 <br>
 <h3>Screenshots</h3>
 <div>
-<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650639.jpg" height=500 width=255/><img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650653.jpg" height=500 width=255/>
+<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680464560828.jpg" height=500 width=255/><img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680464560815.jpg" height=500 width=255/>
 </div>
 <br>
 <p>Light Mode / Dark Mode</p>
