@@ -56,7 +56,6 @@ C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\mipmap-x
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\mipmap-xxhdpi\launcher_foreground.png
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\mipmap-xxxhdpi\icon.png
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\mipmap-xxxhdpi\launcher_foreground.png
-C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\drawable\background.png
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\uploadflags.txt
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\resolvedassemblies.hash
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\link.flag
@@ -456,3 +455,6 @@ C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\android\asse
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\android\assets\System.Data.pdb
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\android\assets\System.Xml.Linq.dll
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\android\assets\System.Xml.Linq.pdb
+C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\drawable\background_light.png
+C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\drawable\background_dark.png
+C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\drawable\icon.png

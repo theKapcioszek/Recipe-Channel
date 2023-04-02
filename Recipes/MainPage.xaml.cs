@@ -62,5 +62,10 @@ namespace Recipes
                 await Navigation.PushAsync(new RecipePage(recipeToSend));
             }
         }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Lista.ItemsSource = RecipeList.Where(s => s.title.ToLower().Contains(e.NewTextValue.ToLower()));
+        }
     }
 }

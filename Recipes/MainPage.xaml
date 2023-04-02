@@ -6,6 +6,7 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
+        <SearchBar Placeholder="Szukaj..." TextChanged="SearchBar_TextChanged"></SearchBar>
         <Label></Label>
         <ListView x:Name="Lista" HasUnevenRows="True" ItemSelected="Lista_ItemSelected" SeparatorVisibility="None">
             <ListView.ItemTemplate>
