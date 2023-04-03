@@ -10,7 +10,7 @@
 <br>
 <h2>Todo</h2>
 
-- [ ] add search bar
+- [x] add search bar
 - [ ] make details page look nicer
 - [ ] add more recipes
 
