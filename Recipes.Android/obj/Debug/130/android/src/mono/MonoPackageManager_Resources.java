@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Recipes.Android.dll" comes first in this list. */
 		"Recipes.Android.dll",
+		"DnsClient.dll",
 		"FormsViewGroup.dll",
 		"MongoDB.Bson.dll",
 		"MongoDB.Driver.Core.dll",

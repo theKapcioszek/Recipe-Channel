@@ -458,3 +458,6 @@ C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\android\asse
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\drawable\background_light.png
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\drawable\background_dark.png
 C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\res\drawable\icon.png
+C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\android\src\mono\JavaInteropTypeManager.java
+C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\android\marshal_methods.armeabi-v7a.o
+C:\Users\Basia\source\repos\Recipes\Recipes.Android\obj\Release\130\android\marshal_methods.arm64-v8a.o

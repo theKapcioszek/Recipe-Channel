@@ -19,7 +19,7 @@ target triple = "armv7-unknown-linux-android"
 @__CompressedAssemblyDescriptor_data_2 = internal global [442368 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_3 = internal global [551424 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_4 = internal global [552960 x i8] zeroinitializer, align 1
-@__CompressedAssemblyDescriptor_data_5 = internal global [2181120 x i8] zeroinitializer, align 1
+@__CompressedAssemblyDescriptor_data_5 = internal global [2183680 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_6 = internal global [121856 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_7 = internal global [690176 x i8] zeroinitializer, align 1
 @__CompressedAssemblyDescriptor_data_8 = internal global [442368 x i8] zeroinitializer, align 1
@@ -96,9 +96,9 @@ target triple = "armv7-unknown-linux-android"
 	}, 
 	; 5
 	%struct.CompressedAssemblyDescriptor {
-		i32 2181120, ; uncompressed_file_size
+		i32 2183680, ; uncompressed_file_size
 		i8 0, ; loaded
-		i8* getelementptr inbounds ([2181120 x i8], [2181120 x i8]* @__CompressedAssemblyDescriptor_data_5, i32 0, i32 0); data
+		i8* getelementptr inbounds ([2183680 x i8], [2183680 x i8]* @__CompressedAssemblyDescriptor_data_5, i32 0, i32 0); data
 	}, 
 	; 6
 	%struct.CompressedAssemblyDescriptor {
@@ -355,4 +355,4 @@ target triple = "armv7-unknown-linux-android"
 !0 = !{i32 1, !"wchar_size", i32 4}
 !1 = !{i32 7, !"PIC Level", i32 2}
 !2 = !{i32 1, !"min_enum_size", i32 4}
-!3 = !{!"Xamarin.Android remotes/origin/d17-4 @ 13ba222766e8e41d419327749426023194660864"}
+!3 = !{!"Xamarin.Android remotes/origin/d17-5 @ 797e2e13d1706ace607da43703769c5a55c4de60"}
