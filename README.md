@@ -26,4 +26,5 @@ Example of Light Mode and Dark Mode Main Page View:
   
 Example of Deatil Page (yeah, I know it is ugly for now):  
 
-<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680292650627.jpg" height=500 width=255/>  
+
+<img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1681748500602.jpg" height=500 width=255/>  

@@ -10,7 +10,11 @@ namespace Recipes
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.DarkSlateGray,
+                BarTextColor = Color.WhiteSmoke,
+            };
         }
 
         protected override void OnStart()

@@ -19,12 +19,11 @@ namespace Recipes
         public MainPage()
         {
             InitializeComponent();
-
             try
             {
-                MongoClient dbClient = new MongoClient("mongodb://xamarin:hy8fEvpOQjXSJOMF@ac-jlrw5wd-shard-00-00.b8kfjmx.mongodb.net:27017,ac-jlrw5wd-shard-00-01.b8kfjmx.mongodb.net:27017,ac-jlrw5wd-shard-00-02.b8kfjmx.mongodb.net:27017/?ssl=true&replicaSet=atlas-12syu6-shard-0&authSource=admin&retryWrites=true&w=majority");
+                MongoClient dbClient = new MongoClient("mongodb://o161:Uni8vstBF9@mongodb.mikr.dev/?authMechanism=SCRAM-SHA-1&authSource=db_o161");
 
-                var database = dbClient.GetDatabase("Recipes");
+                var database = dbClient.GetDatabase("db_o161");
                 var collection = database.GetCollection<BsonDocument>("recipescol");
 
                 var readDocument = collection.Find(new BsonDocument()).ToList();
@@ -47,8 +46,9 @@ namespace Recipes
             }
             catch
             {
-                DisplayAlert("Error", "Please check your internet connection", "ok");
+                DisplayAlert("Błąd", "Błąd połączenia z bazą danych", "ok");
             }
+            
         }
 
         async private void Lista_ItemSelected(object sender, SelectedItemChangedEventArgs e)
