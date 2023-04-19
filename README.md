@@ -17,7 +17,7 @@ I'm sorry but for now only recipes in polish language are supported.
   
 ### Screenshots  
   
-Example of Light Mode and Dark Mode Main Page View:  
+Example views of the Main Page using Light Mode and Dark Mode are as follows:  
 
 <img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680464560828.jpg" height=500 width=255/><img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1680464560815.jpg" height=500 width=255/>
   
