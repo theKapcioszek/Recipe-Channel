@@ -24,7 +24,7 @@ Example views of the Main Page using Light Mode and Dark Mode are as follows:
   
   
   
-Example of Deatil Page (yeah, I know it is ugly for now):  
+Example of Detail Page (yeah, I know it is ugly for now):  
 
 
 <img src="https://raw.githubusercontent.com/theKapcioszek/Recipe-Channel/master/screenshots/1681748500602.jpg" height=500 width=255/>  
