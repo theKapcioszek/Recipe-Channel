@@ -4,7 +4,7 @@ My small app designed to show recipes for tasty food.
   
 ## How does it work?  
   
-It is a Xamarin.Forms app that connects to my MongoDB database and downloads recipes so they can be shown as a list on main page.  
+It is a Xamarin.Forms app that connects to my VPS server and downloads recipes from json file so they can be shown as a list on main page.  
   
 I'm sorry but for now only recipes in polish language are supported.  
   
