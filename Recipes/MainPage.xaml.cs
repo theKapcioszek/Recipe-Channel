@@ -1,6 +1,4 @@
-﻿using MongoDB.Driver;
-using MongoDB.Bson;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Recipes.Model;
 using System;
 using System.Collections.Generic;
@@ -9,44 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using MongoDB.Bson.IO;
+using System.Net.Http;
+using System.Threading;
 
 namespace Recipes
 {
     public partial class MainPage : ContentPage
     {
         public List<RecipeModel> RecipeList { get; set; }
+
         public MainPage()
         {
             InitializeComponent();
             try
             {
-                MongoClient dbClient = new MongoClient("mongodb://o161:Uni8vstBF9@mongodb.mikr.dev/?authMechanism=SCRAM-SHA-1&authSource=db_o161");
-
-                var database = dbClient.GetDatabase("db_o161");
-                var collection = database.GetCollection<BsonDocument>("recipescol");
-
-                var readDocument = collection.Find(new BsonDocument()).ToList();
-
-                string allRecipes = "";
-
-
-
-                foreach (BsonDocument doc in readDocument)
+                using (HttpClient client = new HttpClient())
                 {
-                    allRecipes = allRecipes + doc.ToString().Remove(1, 47) + ",";
+                    var response = client.GetStringAsync("https://kapcioszek.byst.re/recipes.json");
+                    RecipeList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<RecipeModel>>(response.Result);
                 }
 
-                allRecipes = allRecipes.Remove(allRecipes.Length - 1);
-                allRecipes = "[" + allRecipes + "]";
-
-                RecipeList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<RecipeModel>>(allRecipes);
-
                 Lista.ItemsSource = RecipeList;
+                
+
             }
             catch
             {
-                DisplayAlert("Błąd", "Błąd połączenia z bazą danych", "ok");
+                DisplayAlert("Błąd", "Błąd połączenia z bazą danych (1)", "ok");
             }
             
         }
