@@ -6,8 +6,8 @@
              NavigationPage.HasNavigationBar="True">
     <ContentPage.Content>
         <StackLayout>
-            <Frame CornerRadius="20" Padding="0" Margin="46,0" IsClippedToBounds="True" BackgroundColor="#00000000">
-                <Image x:Name="PreviewImage" Source="" HeightRequest="300" WidthRequest="300" HorizontalOptions="Center"></Image>
+            <Frame CornerRadius="25" Padding="0" Margin="120,0" IsClippedToBounds="True" BackgroundColor="#00000000">
+                <Image x:Name="PreviewImage" Source="" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center"></Image>
             </Frame>
             <ListView x:Name="IngredientsList" HasUnevenRows="True" SelectionMode="None" SeparatorVisibility="None" HorizontalScrollBarVisibility="Never">
                 <ListView.ItemTemplate>

@@ -21,6 +21,7 @@ namespace Recipes
             PreviewImage.Source = recipe.image_url;
             IngredientsList.ItemsSource = recipe.ingredients;
             Instructions.Text = recipe.instructions;
+
         }
 
     }
