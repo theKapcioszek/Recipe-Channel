@@ -43,19 +43,18 @@ namespace Recipes
             {
                 languagesList.Add(recipe.language);
             }
-            var languagesListDistincted = languagesList.Distinct();
 
             flyout.FlyoutList = new List<FlyoutModel>();
 
             flyout.FlyoutList.Add(new FlyoutModel("All"));
-            foreach(var language in languagesListDistincted)
+            foreach(var language in languagesList)
             {
                 flyout.FlyoutList.Add(new FlyoutModel(language));
             }
             //Getting Languages
 
             //Setting up ListViews
-            flyout.FlyoutListView.ItemsSource = flyout.FlyoutList;
+            flyout.FlyoutListView.ItemsSource = flyout.FlyoutList.GroupBy(s => s.Title).Select(p => p.First()).ToList();
 
             mymainpage.Lista.ItemsSource = mymainpage.RecipeList;
             //Setting up ListViews
