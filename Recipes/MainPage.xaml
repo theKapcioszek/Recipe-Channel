@@ -8,7 +8,7 @@
     <StackLayout>
         <SearchBar Placeholder="Szukaj..." TextChanged="SearchBar_TextChanged"></SearchBar>
         <Label></Label>
-        <ListView x:Name="Lista" HasUnevenRows="True" ItemSelected="Lista_ItemSelected" SeparatorVisibility="None">
+        <ListView x:Name="Lista" HasUnevenRows="True" ItemSelected="Lista_ItemSelected" SeparatorVisibility="None" x:FieldModifier="public">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

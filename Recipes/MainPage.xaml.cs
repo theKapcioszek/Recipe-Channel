@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.Net.Http;
 using System.Threading;
+using System.Runtime.CompilerServices;
 
 namespace Recipes
 {
@@ -19,28 +20,11 @@ namespace Recipes
         public MainPage()
         {
             InitializeComponent();
-            try
-            {
-                using (HttpClient client = new HttpClient())
-                {
-                    var response = client.GetStringAsync("https://kapcioszek.byst.re/recipes.json");
-                    RecipeList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<RecipeModel>>(response.Result);
-                }
-
-                Lista.ItemsSource = RecipeList;
-                
-
-            }
-            catch
-            {
-                DisplayAlert("Błąd", "Błąd połączenia z bazą danych (1)", "ok");
-            }
-            
         }
 
         async private void Lista_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            if(Lista.SelectedItem != null)
+            if (Lista.SelectedItem != null)
             {
                 int recipeID = 0;
                 Int32.TryParse(Lista.SelectedItem.ToString(), out recipeID);
@@ -53,6 +37,18 @@ namespace Recipes
         private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
             Lista.ItemsSource = RecipeList.Where(s => s.title.ToLower().Contains(e.NewTextValue.ToLower()));
+        }
+
+        public void OnChosenLanguage(string language)
+        {
+            if (language.ToLower() != "all" && language != null)
+            {
+                Lista.ItemsSource = RecipeList.Where(s => s.language.ToLower().Contains(language.ToLower()));
+            }
+            else
+            {
+                Lista.ItemsSource = RecipeList;
+            }
         }
     }
 }

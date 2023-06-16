@@ -9,6 +9,7 @@ namespace Recipes.Model
     {
         public int id { get; set; }
         public string title { get; set; }
+        public string language { get; set; }
         public string[] ingredients { get; set; }
         public string instructions { get; set; }
         public string image_url { get; set; }

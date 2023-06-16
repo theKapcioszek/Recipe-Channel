@@ -10,11 +10,12 @@ namespace Recipes
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage())
-            {
-                BarBackgroundColor = Color.DarkSlateGray,
-                BarTextColor = Color.WhiteSmoke,
-            };
+            //MainPage = new NavigationPage(new MainPage())
+            //{
+            //    BarBackgroundColor = Color.DarkSlateGray,
+            //    BarTextColor = Color.WhiteSmoke,
+            //};
+            MainPage = new Flyout();
         }
 
         protected override void OnStart()
